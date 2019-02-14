@@ -7,7 +7,7 @@ TTL : Time to live , or expiration time for a key in the cache is set to 15 seco
 
 To implement geoligically distributed part : my idea was to make seperated cache for each region and access the cache based on the incoming IP address. In the code I have made seperate cache for 3 regions which can be stored in different servers, and can be accessed based on their IP, for simplicity I have filterd them using the first octate of the requesting IP address. Mapping of ocatate to region is given at IP_REGION 
 
-source.py
+source.py (run this file)
 This is the server side code to use the cache, it contains test cases to simulate requests coming from different IP address. It also shows data consistency through the caches i:e if the main db is updated all the caches will be updated as well in real time.
 
 
