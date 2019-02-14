@@ -10,3 +10,8 @@ To implement geoligically distributed part : my idea was to make seperated cache
 source.py
 This is the server side code to use the cache, it contains test cases to simulate requests coming from different IP address. It also shows data consistency through the caches i:e if the main db is updated all the caches will be updated as well in real time.
 
+
+missing functionalities:
+1.Cache doesnt take write commands , all the writes are directly made to DB which updates the cache.
+2. A simple No-sql key-val DB is taken for flexible schema
+3. No specific coding is done for network failure resiallancy apart from error handling
